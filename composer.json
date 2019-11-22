@@ -1,0 +1,40 @@
+{
+    "name": "wisdersoft/yii2-elasticsearch-log",
+    "description": "yii2 elasticsearch log",
+    "keywords": ["yii2", "elasticsearch", "log"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dickens Gao",
+            "email": "dickensgao@protonmail.ch"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "wisdersoft/yii2-elasticsearch": "~0.3.0",
+        "yiisoft/yii2": "~2.0.14"
+    },
+    "require-dev": {
+        "elasticsearch/elasticsearch": "~7.2.0",
+        "yiisoft/yii2-queue": "^2.3"
+    },
+    "suggest": {
+        "yiisoft/yii2-queue": "Support async write to ElasticSearch"
+    },
+    "autoload": {
+        "psr-4": {
+            "wisder\\yii\\elasticsearch\\log\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    }
+}
