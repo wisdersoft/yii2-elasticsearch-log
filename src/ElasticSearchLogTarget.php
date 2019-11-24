@@ -61,7 +61,7 @@ class ElasticSearchLogTarget extends Target
         }
 
         $writer = new LogWriter();
-        $writer->write($this->elasticsearch, $this->messages, $this->index);
+        $writer->write($this->elasticsearch, $messages, $this->index);
     }
 
     public function formatMessage($message)
