@@ -24,7 +24,7 @@ class ElasticSearchLogTarget extends Target
     /**
      * @var Connection|string the ElasticSearch connection component id
      */
-    public $elasticsearch;
+    public $elasticsearch = 'elasticsearch';
 
     private $queueElasticsearch;
 
