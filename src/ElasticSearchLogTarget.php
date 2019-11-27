@@ -54,7 +54,7 @@ class ElasticSearchLogTarget extends Target
         if ($this->queue) {
             $this->queue->push(new LogJob([
                 'index' => $this->index,
-                'messages' => $this->messages,
+                'messages' => $messages,
                 'elasticsearch' => $this->queueElasticsearch,
             ]));
             return ;
